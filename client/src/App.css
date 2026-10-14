@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background:
+    linear-gradient(to bottom, #8fd3ff 0%, #dff7ff 45%, #74d680 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root {
+  width: 100%;
+}
+
+.app-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 30px;
+
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 15px 40px rgba(0, 80, 130, 0.25),
+    inset 0 1px 1px rgba(255, 255, 255, 0.8);
+
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.title {
+  text-align: center;
+  color: #075985;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 3px rgba(255, 255, 255, 0.8);
+}
+
+.forms-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 360px;
+  padding: 25px;
+
+  border-radius: 24px;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(220, 248, 255, 0.6)
+  );
+
+  box-shadow:
+    0 10px 25px rgba(0, 100, 160, 0.2),
+    inset 0 1px 2px white;
+}
+
+.card h2 {
+  color: #0b6fa4;
+  margin-top: 0;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 8px 0;
+
+  border-radius: 14px;
+  border: 1px solid rgba(0, 120, 180, 0.25);
+
+  background: rgba(255, 255, 255, 0.75);
+
+  color: #123c56;
+
+  box-sizing: border-box;
+  font-size: 1rem;
+  outline: none;
+}
+
+input::placeholder {
+  color: #5f7f91;
+}
+
+input:focus {
+  border-color: #2ca7e0;
+  box-shadow:
+    0 0 0 3px rgba(44, 167, 224, 0.18),
+    inset 0 2px 5px rgba(0, 90, 140, 0.1);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+
+  border: none;
+  border-radius: 16px;
+
+  background: linear-gradient(
+    to bottom,
+    #4fd1ff,
+    #1995d3
+  );
+
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 5px 12px rgba(0, 100, 160, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.7);
+}
+
+button:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+.message {
+  text-align: center;
+  margin-top: 12px;
+  color: #075985;
+  font-weight: bold;
+}
